@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "theming-issue-demo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
