@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  platforms = '';
 
-  constructor() {}
-
+  constructor(platform: Platform) {
+    this.platforms = JSON.stringify(platform.platforms());
+  }
 }
